@@ -9,3 +9,5 @@ AWS Playground
     create token with repo + workflow and org.read
     gh auth login
 
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
