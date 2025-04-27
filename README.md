@@ -1,13 +1,19 @@
 AWS Playground
 
 1. Open CloudShell
-2. Install gh cli
-     sudo yum install yum-utils
-     sudo yum-config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
-     sudo yum install gh
-3. Login to Github
-    create token with repo + workflow and org.read
-    gh auth login
+2. Install gh cli & Terraform cli using init could shell script
 
-sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
-sudo yum -y install terraform
+
+3. Login to Github
+
+  Generate new token on https://github.com/settings/tokens
+  The minimum required scopes are 'repo', 'read:org', 'admin:public_key'.
+  Then log to github from cloud console
+  gh auth login
+  git config --global user.name="User Name"
+  git config --glabl user.email="user@email.com"
+  then clone this repository
+
+4. Init terraform (terraform init)
+
+
